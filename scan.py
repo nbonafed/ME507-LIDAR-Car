@@ -3,7 +3,7 @@
 This file holds all information regarding the sensors and scanning
 '''
 
-class scan(object):
+class scanTask(object):
     '''
     '''
     
@@ -23,7 +23,7 @@ class scan(object):
         }
         return
     
-    def scanTask( self ): #, new servo angle , new motor speed ):
+    def run( self ): #, new servo angle , new motor speed ):
         if servo.ready:
             for sensor in range(4):
                 self.posX.append( position.pos['x'] )
